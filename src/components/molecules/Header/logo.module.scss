@@ -1,0 +1,11 @@
+@import '@styles/mixins.scss';
+
+.content {
+	cursor: pointer;
+
+	display: none;
+
+	@include small {
+		display: flex;
+	}
+}
