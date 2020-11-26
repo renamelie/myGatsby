@@ -34,7 +34,8 @@ module.exports = {
 				alias: {
 					'@components': 'src/components',
 					'@styles': 'src/styles',
-					'@config': 'src/config.js',
+					'@config': 'src/config',
+					'@context': 'src/context',
 				},
 				extensions: [],
 			},

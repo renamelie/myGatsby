@@ -1,26 +1,26 @@
+@import '@styles/mixins.scss';
+
 header {
+	position: fixed;
+	width: 100%;
+	// border: 2px solid purple;
+	z-index: 1;
+}
+
+.content {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 
-	padding: 0 var(--paddingWidth);
+	padding: 0 var(--paddingWidthSmall);
 	max-width: var(--maxWidth);
 	height: var(--headerHeight);
 
-	background: var(--brand-main);
+	// border: 2px solid pink;
 }
 
-.list {
-	display: flex;
-
-	font-family: var(--font-family-mont);
-	text-transform: uppercase;
-	font-size: var(--font-size-mini);
-	line-height: 1.8;
-	letter-spacing: 0.1em;
-	color: var(--color-white);
-
-	& > * {
-		margin-left: 1.5rem;
+@include medium {
+	.content {
+		padding: 0 var(--paddingWidth);
 	}
 }

@@ -1,20 +1,33 @@
 :root {
 	/* Colors */
-	--brand-main: #001f34;
+	--brand-main: #e8dbd5;
+	--brand-acent: #a85748;
+	--brand-acentBis: #a58d88;
+	--brand-accent-blue: #8cd9f4;
+	--color-blue: #001f34;
 	--color-white: #fff;
 	--color-black: #000;
+	--linear-blue: linear-gradient(
+		to bottom,
+		rgba(0, 31, 52, 0.85),
+		rgba(0, 31, 52, 0.6) 50%,
+		rgba(0, 31, 52, 0.75)
+	);
 
 	/* Width */
 	--maxWidth: 110rem;
 	--paddingWidth: 3rem;
+	--paddingWidthSmall: 1rem;
 	--headerHeight: 100px;
 
 	/* Typography */
 	--font-size-root: 18px;
 	--font-size-base: 1rem;
+	--font-size-xlarge: 3.2rem;
 	--font-size-large: 1.2rem;
 	--font-size-small: 0.8rem;
 	--font-size-mini: 0.7rem;
+	--font-size-minini: 0.6rem;
 	--font-size-h1: 2.5rem;
 	--font-size-h2: 2rem;
 	--font-size-h3: 1.65rem;

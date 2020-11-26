@@ -1,0 +1,11 @@
+.content {
+}
+
+.inner {
+	height: 100vh;
+	padding: 0 var(--paddingWidth);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
