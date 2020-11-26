@@ -3,9 +3,5 @@
 .content {
 	cursor: pointer;
 
-	display: none;
-
-	@include small {
-		display: flex;
-	}
+	display: flex;
 }

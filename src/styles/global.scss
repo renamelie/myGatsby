@@ -12,6 +12,10 @@ body {
 	padding: 0;
 }
 
+html {
+	background-color: var(--color-blue);
+}
+
 body {
 	color: var(--color-white);
 }
@@ -32,4 +36,10 @@ a {
 
 ul {
 	list-style: none;
+	padding: 0;
+}
+
+button {
+	outline: none;
+	border: none;
 }
