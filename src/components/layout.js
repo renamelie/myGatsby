@@ -6,8 +6,9 @@ import styles from './layout.module.scss'
 import { Header, Footer, LoaderSpin } from '@components'
 import { GlobalContextProvider } from '@context'
 
-const Layout = ({ location, children }) => {
-	const isHome = location.pathname === '/'
+const Layout = ({ children }) => {
+	const isHome =
+		typeof window !== 'undefined' && window.location.pathname === '/'
 	const [isLoading, setIsLoading] = useState(isHome)
 
 	console.log(window.location)
