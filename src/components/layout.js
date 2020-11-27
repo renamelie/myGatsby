@@ -6,10 +6,11 @@ import styles from './layout.module.scss'
 import { Header, Footer, LoaderSpin } from '@components'
 import { GlobalContextProvider } from '@context'
 
-const Layout = ({ children }) => {
-	const isHome = window.location.pathname === '/'
-	const [isLoading, setIsLoading] = useState(true)
+const Layout = ({ location, children }) => {
+	const isHome = location.pathname === '/'
+	const [isLoading, setIsLoading] = useState(isHome)
 
+	console.log(window.location)
 	const data = useStaticQuery(graphql`
 		query SiteTitleQuery {
 			site {
@@ -44,6 +45,7 @@ const Layout = ({ children }) => {
 }
 
 Layout.propTypes = {
+	location: PropTypes.object,
 	children: PropTypes.node.isRequired,
 }
 

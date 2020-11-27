@@ -1,15 +1,20 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
 import { Layout, SEO } from '@components'
 
-const SecondPage = () => (
-	<Layout>
+const FivePage = ({ location }) => (
+	<Layout location={location}>
 		<SEO title="Page two" />
-		<h1>Hi from the page five</h1>
+		<h1>Hi from the five page</h1>
 		<p>Welcome to page 5</p>
 		<Link to="/">Go back to the homepage</Link>
 	</Layout>
 )
 
-export default SecondPage
+FivePage.propTypes = {
+	location: PropTypes.object.isRequired,
+}
+
+export default FivePage
