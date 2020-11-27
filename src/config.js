@@ -1,20 +1,20 @@
 export const navLinks = [
 	{
-		name: 'Group',
+		name: 'page2',
 	},
 	{
-		name: 'Production',
+		name: 'page3',
 	},
 	{
-		name: 'Brands',
+		name: 'page4',
 	},
 	{
-		name: 'Distribution',
+		name: 'page5',
 	},
 	{
-		name: 'Contact',
+		name: 'contact',
 	},
 	{
-		name: 'News',
+		name: 'news',
 	},
 ]

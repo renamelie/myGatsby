@@ -1,17 +1,20 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import PropTypes from 'prop-types'
 
 import { Layout, SEO, Welcome, Story } from '@components'
 
 // import styles from "./index.module.scss"
 
-const IndexPage = () => (
-	<Layout>
+const IndexPage = ({ location }) => (
+	<Layout location={location}>
 		<SEO title="Home" />
 		<Welcome />
 		<Story />
-		<Link to="/page-2/">Go to page 2</Link> <br />
 	</Layout>
 )
+
+IndexPage.propTypes = {
+	location: PropTypes.object.isRequired,
+}
 
 export default IndexPage

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
 
 import styles from './logo.module.scss'
@@ -23,10 +23,12 @@ const Logo = () => {
 
 	return (
 		<div className={styles.content}>
-			<Img
-				className="logo"
-				fixed={data.placeholderImage.childImageSharp.fixed}
-			/>
+			<Link to="/">
+				<Img
+					className="logo"
+					fixed={data.placeholderImage.childImageSharp.fixed}
+				/>
+			</Link>
 		</div>
 	)
 }
