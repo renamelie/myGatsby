@@ -1,5 +1,9 @@
 .footer {
-  margin-top: 2rem;
-  border: 2px solid pink;
-  text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: var(--headerHeight);
+	margin-top: 2rem;
+	border: 2px solid pink;
+	text-align: center;
 }

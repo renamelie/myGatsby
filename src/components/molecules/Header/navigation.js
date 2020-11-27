@@ -1,14 +1,16 @@
 import React from 'react'
+import { Link } from 'gatsby'
+import styles from './navigation.module.scss'
 
 import { navLinks } from '@config'
-
-import styles from './navigation.module.scss'
 
 const Navigation = () => {
 	return (
 		<ul className={styles.list}>
 			{navLinks.map(({ name }) => (
-				<li key={name}>{name}</li>
+				<li key={name}>
+					<Link to={`/${name}/`}>{name}</Link>
+				</li>
 			))}
 		</ul>
 	)
