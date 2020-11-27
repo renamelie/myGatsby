@@ -11,7 +11,6 @@ const Layout = ({ children }) => {
 		typeof window !== 'undefined' && window.location.pathname === '/'
 	const [isLoading, setIsLoading] = useState(isHome)
 
-	console.log(window.location)
 	const data = useStaticQuery(graphql`
 		query SiteTitleQuery {
 			site {
